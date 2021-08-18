@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured </title>
+    <style>
+ ul{
+  float:right;
+  list-style-type:none;
+}
+ul li{
+  margin-top: 25px;
+  display:inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color:rgb(14, 13, 13);
+  padding:5px 20px;
+  border:1px solid rgb(12, 12, 12);
+  transition: 1s ease;
+}
+ul li a:hover{
+  background-color: #000;
+  color:#fff;
+}
+ul li.active1 a{
+  background-color:rgb(8, 8, 8);
+  color:rgb(255, 253, 253);
+}
+.logo img{
+  float:left;
+  width:100px;
+  height: 100px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #60a9ff;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: white;
+  padding: 15px 15px;
+  border: 30px solid#60a9ff;
+  border-radius:10px;
+  width:80%;
+    display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Featured-plan {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.Featured-plan:last-child {
+  border-bottom: none;
+}
+  
+.Featured-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+ 
+.Featured-header {
+  color: rgb(10, 10, 10);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Featured-features {
+  margin: 50px 0 25px;
+  color: #1201f7;
+}
+
+.Featured-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #e1f1ff;
+}
+
+.Featured-features-item:last-child{
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.Featured-price {
+  color: #016ff9; 
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.Featured-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+} 
+.Featured-button:hover, .Featured-button:focus {
+  background-color: #e1f1ff;
+}
+
+.Featured-button.is-featured {
+  background-color: #48aaff;
+  color: white;
+}
+
+.Featured-button.is-featured:hover, .Featured-button.is-featured:focus{
+  background-color: #269aff;
+  color: white;
+}
+
+
+@media (min-width: 900px){
+  .panel {
+    flex-direction: row;
+  }
+  .Featured-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  .Featured-plan:last-child {
+    border-right: none;
+  }
+} 
+</style>
+</head>
+<body>
+        <ul>
+            <li class ="active"><a href ="index.html">Home</a></li>
+            <li class = "active1"><a href ="Featured.html">Featured</a></li>
+            <li><a href ="Product page.html">Product Page</a></li>
+            <li><a href ="Contact.html">Contact Us</a></li>
+            <li><a href ="About.html">About Us</a></li>
+        </ul>
+        <div class="logo">
+           <img src="images\nike_PNG18.png">
+        </div>
+        <div class="panel">
+
+          <div class="Featured-plan">
+              <img src="images\icon1.png" alt="Nike Air Max 90 Gs" class="Featured-img">
+              <h2 class="Featured-header">Nike Air Max 90 GS</h2>
+              <ul class="Featured-features">
+                  <li class="Featured-features-item">Sporty sneaker with a modern look</li>
+                  <li class="Featured-features-item">Provide cushioning underfoot</li>
+                  <li class  = "Featured-features-item">Special for gym training </li>
+              </ul>
+              <span class="Featured-price"><b>$94.32 + tax</b></span>
+              <a href="#/" class="Featured-button is-featured">Buy Now</a>
+          </div>
+  
+          <div class="Featured-plan">
+              <img src="images\icon2.png" alt="Nike Air Force 1" class="Featured-img">
+              <h2 class="Featured-header">Air Force 1</h2>
+              <ul class="Featured-features">
+                <li class="Featured-features-item">More Comfortable</li>
+                  <li class="Featured-features-item">First ever basketball shoe to feature Nike Air technology</li>
+                  <li class="Featured-features-item">Shoe in the world of hip-hop</li>
+              </ul>
+              <span class="Featured-price"><b>$95 + tax</b></span>
+              <a href="#/" class="Featured-button is-featured">Buy Now</a>
+          </div>
+  
+          <div class="Featured-plan">
+              <img src="images\icon3.png" alt="Nike Blazer" class="Featured-img">
+              <h2 class="Featured-header">Nike Blazer</h2>
+              <ul class="Featured-features">
+                  <li class="Featured-features-item">Comfortable Enough</li>
+                  <li class="Featured-features-item">Mid-sole and white Nike logo on the heel</li>
+                  <li class="Featured-features-item">sneaker for casual lifestyle wear and even for skateboarding</li>
+              </ul>
+              <span class="Featured-price"><b>$92.67 + tax</b></span>
+              <a href="#/" class="Featured-button is-featured">Buy Now</a>
+          </div>
+  
+      </div>
+  
+</body>
+</html>
